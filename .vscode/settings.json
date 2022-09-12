@@ -1,0 +1,9 @@
+{
+    "liveServer.settings.multiRootWorkspaceName": "list",
+    {
+        "liveServer.settings.mount": [
+            ["/", "/js"],
+            ["/", "/css"],
+            ["/", "/images"],
+    }
+}

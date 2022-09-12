@@ -1,0 +1,99 @@
+:root{
+    --animation-duration__1: 200ms;
+    --animation-duration__2: 500ms;
+    --animation-duration__3: 700ms;
+    --animation-duration__4: 1000ms;
+    --animation-duration__5: 1200ms;
+}
+@keyframes growX {
+    0% {
+        transform: scaleX(0);
+        opacity: 0;
+    }
+    80% {
+        transform: scaleX(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(0);
+    }
+    80% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes fadeinhalf {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes lefttoright {
+    0% {
+        transform: translateX(-15px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes beating {
+    0% {
+        transform: scale(1);
+    }
+    80% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+@keyframes button {
+    0% {
+        transform: scaleX(1);
+        transform: scaleY(1);
+    }
+    350%{
+        transform: scaleX(1.02);
+    }
+    40% {
+
+        transform: scaleY(1.06);
+    }
+    50%{
+        transform: scaleX(0.98);
+    }
+    65% {
+        transform: scaleY(1.00);
+
+    }
+    100% {
+        transform: scaleY(1);
+        transform: scaleX(1);
+    }
+}

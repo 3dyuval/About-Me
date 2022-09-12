@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My List</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/assisfery/SocialShareJS@1.4/social-share.min.css">
+    <link rel="stylesheet" href="css/dark_colors.css" media="(prefers-color-scheme: dark)" />
+    <link rel="stylesheet" href="css/light_colors.css"
+        media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
+    <link rel="stylesheet" href="css/index.css" />
+    <!-- <script src="https://cdn.jsdelivr.net/gh/assisfery/SocialShareJS@1.4/social-share.min.js"></script> -->
+    <script src="js/list.min.js" defer></script>
+    <script src="js/List-skills.js" defer></script>
+
+    <!-- <script src="js/list-skills.js" defer></script> -->
+</head>
+
+<body>
+
+    <div class="my-id">
+
+        <div class="left-sticky">
+            <div class="my-info">
+                <div class="contact-wrap">
+                    <span class="label">Lets connect</span>
+                    <ul class="contact">
+                        <li class=" link"><a title="3dyuval@gmail.com" alt="3dyuval@gmail.com"
+                                href="mailto:3dyuval@gmail.com" id="email"><i class="fas fa-envelope"></i></span></a>
+                        </li>
+                        <li class=" link"><a title="+972-52-3944447" alt="+972-52-3944447"
+                                href="https://api.whatsapp.com/send?phone=972523944447&text=Hi!%20About%20your%20portfolio..."><i
+                                    class="fab fa-whatsapp"></i></span></a></li>
+                        <li class=" link"><a title="My LinkedIn Profile" alt="My LinkedIn Profile"
+                                href="https://www.linkedin.com/in/dikerman/"><i
+                                    class="fab fa-linkedin-in"></i></span></a></li>
+                        <li class=" link"><a title="My Dribbble Profile" href="https://dribbble.com/Dikerman"><i
+                                    class="fab fa-dribbble"></i></span></a></li>
+                        <li class=" link"><a title="My CodePen Profile" href="https://codepen.io/3dyuval"><i
+                                    class="fab fa-codepen"></i></span></a></li>
+                    </ul>
+                </div>
+                <div class="share-me-wrapper">
+                    <div class="close-this btn" onClick="toggleActive('.share-me-wrapper')"><i class="fas fa-times"></i>
+                    </div>
+                    <div class="ss-box content"
+                        data-ss-social="facebook, whatsapp, linkedin, gmail, telegram, messenger, email, "></div>
+                </div>
+                <div class="message-me-wrapper">
+                    <div class="close-this btn" onClick="toggleActive('.message-me-wrapper')"><i
+                            class="fas fa-times"></i></div>
+                    <div class="content">[contact-form-7 id="1862" title="Message me (project)"]</div>
+                </div>
+
+                <div class="about">
+
+                    <div class="name">
+                        <div class="pic"></div>
+                        <span><i class="fas fa-location-arrow"></i></i> Giva'ataim, ISRAEL</span>
+                        <h1>Yuval Dikerman</h1>
+
+                        <div class="status">
+                            <p>Hey, what's up?✌</p>
+                        </div>
+
+
+                        <div class="buttons-wrapper">
+                            <div class="btn btn2">CV<i class="fas fa-file-download"></i></div>
+                            <div class="btn btn1" id="messageme" onClick="toggleActive('.message-me-wrapper');">Message
+                                Me <i class="fas fa-comment"></i></div>
+                        </div>
+
+                        <a href="#">
+                            <div class="btn btn3" id="share">
+                                <span>Share page <i class="fas fa-share-alt"></i></span>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id='skills'>
+            <h2 id="skills-header">My Skills</h2>
+            <div id="skills-navigation">
+                <div class="sort-list">
+                    <span class="sort selected-sort" data-sort="passion" data-order='desc'
+                        onclick="handleClick(this)">Passion</span>
+                    <span class="sort" data-sort="theory" data-order='desc' onclick="handleClick(this)">Theory</span>
+                    <span class="sort" data-sort="practice" data-order='desc'
+                        onclick="handleClick(this)">Experience</span>
+                </div>
+            </div>
+            <div>
+                <ul class="list skills"></ul>
+            </div>
+            <div class="random-sentence">
+                <p>We’re all going to die 🌈</p>
+
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

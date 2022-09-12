@@ -1,0 +1,134 @@
+:root {
+  --color-bg-default: rgba(34, 39, 43, 1);
+  --color-bg-secondary: rgba(22, 26, 29, 1);
+  --color-bg-link: rgba(0, 120, 210, 1);
+  --color-bg-brand: rgba(0, 113, 178, 1);
+  --color-bg-normal: rgba(11, 165, 255, 1);
+
+  --color-bg-system: #4d525b;
+  --color-bg-alert: #ff4443;
+  --color-bg-caution: #f2c94c;
+  --color-bg-warning: #f38b01;
+  --color-bg-critical: #33000f;
+
+  --color-bg-stripe: rgba(246, 251, 253, 0.06);
+  --color-bg-tone: rgba(12, 17, 19, 0.85);
+  --color-bg-soft: rgba(255, 255, 255, 0.9);
+  --color-bg-border: rgba(255, 255, 255, 0.2);
+  --color-bg-ghost: rgba(246, 251, 253, 0.1);
+  --color-nums-shadow: rgba(0, 0, 0, 1);
+
+  --color-typo-primary: rgba(250, 250, 250, 1);
+  --color-typo-secondary: rgba(0, 65, 102, 0.2);
+  --color-typo-brand: rgba(0, 113, 178, 1);
+  --color-typo-ghost: rgba(0, 65, 102, 0.2);
+  --color-typo-link: rgba(15, 159, 255, 1);
+  --color-typo-link-hover: rgba(111, 165, 200, 1);
+  --color-typo-link-minor: rgba(87, 188, 255, 1);
+  --color-typo-system: rgba(99, 110, 131, 1);
+  --color-typo-normal: rgba(0, 155, 245, 1);
+  --color-typo-succes: rgba(16, 174, 121, 1);
+  --color-typo-warning: rgba(230, 130, 0, 1);
+  --color-typo-alert: rgba(247, 59, 59, 1);
+  --color-typo-cution: rgba(248, 199, 53, 1);
+  --color-typo-critical: rgba(98, 0, 29, 1);
+
+  --color-control-bg-default: rgba(34, 39, 43, 1);
+  --color-control-bg-active: rgba(0, 150, 235, 0.7);
+  --color-control-bg-focus: rgba(0, 150, 235, 0.4);
+  --color-control-bg-border: rgba(0, 65, 102, 0.2);
+  --color-control-bg-border-focus: rgba(0, 145, 230, 1);
+  --color-control-bg-border-hover: rgba(246, 251, 253, 0.52);
+  --color-control-typo-default: rgba(255, 255, 255, 0.8);
+  --color-control-typo-placeholder: rgba(255, 255, 255, 0.35);
+  --color-control-bg-disable: rgba(250, 250, 250, 0.16);
+  --color-control-typo-disable: rgba(0, 65, 102, 0.2);
+  --color-control-bg-border-disable: rgba(22, 26, 29, 1);
+  --color-control-bg-primary: rgba(0, 120, 210, 1);
+  --color-control-bg-typo-primary: rgba(255, 255, 255, 1);
+  --color-control-bg-primary-hover: rgba(0, 145, 255, 1);
+  --color-control-bg-typo-primary-hover: rgba(255, 255, 255, 1);
+
+  --color-control-bg-secondary: rgba(0, 65, 102, 0.2);
+  --color-control-typo-secondary: rgba(15, 159, 255, 1);
+  --color-control-bg-border-secondary: rgba(0, 120, 210, 1);
+  --color-control-typo-primary: rgba(87, 188, 255, 1);
+  --color-control-bg-border-secondary-hover: rgba(0, 145, 255, 1);
+
+  --color-control-bg-ghost: rgba(250, 250, 250, 0.16);
+  --color-control-typo-ghost: rgba(255, 255, 255, 0.75);
+  --color-control-bg-ghost-hover: rgba(250, 250, 250, 0.23);
+  --color-control-typo-ghost-hover: rgba(255, 255, 255, 0.9);
+
+  --color-control-bg-clear: rgba(250, 250, 250, 0);
+  --color-control-typo-clear: rgba(255, 255, 255, 0.75);
+  --color-control-bg-clear-hover: rgba(250, 250, 250, 0.23);
+  --color-control-typo-clear-hover: rgba(255, 255, 255, 0.9);
+
+  --team-up-typo-primary: rgb(209, 209, 209);
+  --team-up-typo-secondary: rgb(182, 182, 182);
+  --teamup-button: rgb(0, 210, 123);
+  --teamup-button-hover: rgb(91, 212, 162);
+  --teamup-button-hover: rgb(91, 212, 162);
+  --teamup-link: rgba(0, 255, 149, 0.699);
+  --team-up-bg-primary: rgba(57, 53, 62, 1);
+  --team-up-bg-secondary: rgba(22, 26, 29, 1);
+  --team-up-bg-secondary2: rgb(24, 19, 27);
+
+  --baloon-link: rgb(101, 188, 255);
+  --baloon-bg: rgba(12, 17, 19, 0.85);
+  --baloon-link-bg: rgb(162, 215, 255);
+  --baloon-link-visited: rgb(66, 0, 189);
+  --baloon-btn-bg: rgba(0, 120, 210, 1);
+  --baloon-btn-text: rgb(202, 232, 255);
+  --baloon-btn-bg-hover: rgba(31, 16, 112, 0.96);
+  --baloon-bg-hover: rgba(0, 19, 31, 0.85);
+  --baloon-txt: rgba(208, 238, 255, 0.85);
+  --baloon-bg-alert: rgb(204 16 22);
+  --baloon-shadow: rgba(22, 0, 0, 0.35);
+
+   /* base color 1 */
+   --base1: 250;
+   --color1-light:  hsla(var(--base1), 50%, 75%, 100%);
+   --color1-normal: hsla(var(--base1), 50%, 50%, 100%);
+   --color1-darker: hsla(var(--base1), 50%, 35%, 100%);
+   
+   --button1-background-color: hsl(var(--base1), 70%, 60%, 40%);
+   --button1-border: 1px solid hsl(var(--base1), 70%, 60%, 0%);
+   --button1-color: hsl(var(--base1), 50%, 20%);
+
+   --button1-background-color-hover: hsl(var(--base1), 70%, 60%, 90%);
+   --button1-border-hover: 1px solid hsl(var(--base1), 70%, 20%, 25%);
+   --button1-color-hover: hsl(var(--base1), 70%, 30%);
+   --button1-box-shadow: 0 0 7px hsl(var(--base1), 50%, 50%, 20%);
+
+   /* base color 2 */
+   --base2: 205;
+   --color2-light:  hsla(var(--base2), 50%, 75%, 100%);
+   --color2-normal: hsla(var(--base2), 50%, 50%, 100%);
+   --color2-darker: hsla(var(--base2), 50%, 35%, 100%);
+   
+   
+   --button2-background-color: hsl(var(--base2), 70%, 95%, 50%);
+   --button2-border: 1px solid hsl(var(--base2), 70%, 60%, 0%);
+   --button2-color: hsl(var(--base3), 60%, 20%);
+
+   --button2-background-color-hover: hsl(var(--base2), 40%, 60%, 35%);
+   --button2-border-hover: 1px solid hsl(var(--base2), 70%, 50%, 35%);
+   --button2-color-hover: hsl(var(--base2), 80%, 60%);
+   --button2-box-shadow: 0 0 7px  hsl(var(--base2), 50%, 20%, 20%);
+
+   /*base color 3 */
+   --base3:220; 
+   --color3-light:  hsla(var(--base3), 50%, 75%, 100%);
+   --color3-normal: hsla(var(--base3), 50%, 50%, 100%);
+   --color3-darker: hsla(var(--base3), 50%, 35%, 100%);
+   
+   --button3-background-color: hsl(var(--base3), 60%, 50%, 00%);
+   --button3-border: 1px solid hsl(var(--base3), 40%, 10%, 40%);
+   --button3-color: hsl(var(--base3), 20%, 5%);
+
+   --button3-background-color-hover: hsl(var(--base3), 50%, 50%, 50%);
+   --button3-border-hover: 1px solid hsl(var(--base3), 70%, 15%, 20%);
+   --button3-color-hover: hsl(var(--base3), 50%, 20%);
+}

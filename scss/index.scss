@@ -1,0 +1,39 @@
+@use 'keyframes';
+@use 'colors';
+//  @use 'dark_colors';
+// @use 'light_colors';
+@use 'skills';
+
+$imagedir: '../images';
+
+@import url('https://fonts.googleapis.com/css');
+
+// @import url(C:\Dropbox\Projects\theyuval\htdocs\wordpress\wp-content\themes\TheYuval\css\global_styles.css);
+
+// @import url('./all.scss');
+
+@import './id';
+
+@font-face {
+	font-family: 'FA5';
+	src: url(../../node_modules/fontawesome/webfonts/fa-solid-900.woff2);
+}
+
+@font-face {
+	font-family: 'FA5-B';
+	src: url(../../node_modules/fontawesome/webfonts/fa-brands-400.woff2);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	padding: 0;
+	font-family: 'Roboto';
+}
+
+a {
+	text-decoration: none;
+}

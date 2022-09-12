@@ -1,0 +1,17 @@
+/* Error: Undefined variable.
+ *     ,
+ * 144 |     background-image: url('#{$imagedir}/profile_photo-120x120.jpg');
+ *     |                              ^^^^^^^^^
+ *     '
+ *   scss\id.scss 144:27  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a     \2577 \a 144 \2502      background-image: url('#{$imagedir}/profile_photo-120x120.jpg');\d\a     \2502                               ^^^^^^^^^\a     \2575 \a   scss\\id.scss 144:27  root stylesheet";
+}
