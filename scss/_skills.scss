@@ -1,3 +1,6 @@
+$imagesURL: '../images';
+
+
 .sort[data-sort='passion']::before,
 .stat-wrap.passion .icon::before {
 	font-family: 'FA5';
@@ -450,92 +453,91 @@ ul.list h3 {
 	}
 }
 
-$imagedir: '../images';
 
 .skill-item#UX::before {
-	background-image: url('#{$imagedir}/ux.jpg');
+	background-image: url('#{$imagesURL}/ux.jpg');
 }
 
 .skill-item#UI::before {
-	background-image: url('#{$imagedir}/ui.jpg');
+	background-image: url('#{$imagesURL}/ui.jpg');
 }
 
 .skill-item#Indesign::before {
-	background-image: url('#{$imagedir}/id.jpg');
+	background-image: url('#{$imagesURL}/id.jpg');
 }
 
 .skill-item#Illustrator::before {
-	background-image: url('#{$imagedir}/ai.jpg');
+	background-image: url('#{$imagesURL}/ai.jpg');
 }
 
 .skill-item#CSS::before {
-	background-image: url('#{$imagedir}/css.jpg');
+	background-image: url('#{$imagesURL}/css.jpg');
 }
 
 .skill-item#Responsive\ Design::before {
-	background-image: url('#{$imagedir}/resp.jpg');
+	background-image: url('#{$imagesURL}/resp.jpg');
 }
 
 .skill-item#Lottie\ Animation::before {
-	background-image: url('#{$imagedir}/lottie.jpg');
+	background-image: url('#{$imagesURL}/lottie.jpg');
 }
 
 .skill-item#Industrial\ Design::before {
-	background-image: url('#{$imagedir}/indu.jpg');
+	background-image: url('#{$imagesURL}/indu.jpg');
 }
 
 .skill-item#\ 3D\ Printing::before {
-	background-image: url('#{$imagedir}/3D.jpg');
+	background-image: url('#{$imagesURL}/3D.jpg');
 }
 
 .skill-item#Architecture\ 3D\ Modeling::before {
-	background-image: url('#{$imagedir}/visu.jpg');
+	background-image: url('#{$imagesURL}/visu.jpg');
 }
 
 .skill-item#Character\ Design::before {
-	background-image: url('#{$imagedir}/char.jpg');
+	background-image: url('#{$imagesURL}/char.jpg');
 }
 
 .skill-item#Wordpress::before {
-	background-image: url('#{$imagedir}/wp.jpg');
+	background-image: url('#{$imagesURL}/wp.jpg');
 }
 
 .skill-item#Coffee::before {
-	background-image: url('#{$imagedir}/coffee.jpg');
+	background-image: url('#{$imagesURL}/coffee.jpg');
 }
 
 .skill-item#JavaScript::before {
-	background-image: url('#{$imagedir}/js.jpg');
+	background-image: url('#{$imagesURL}/js.jpg');
 }
 
 .skill-item#After\ Effects::before {
-	background-image: url('#{$imagedir}/ae.jpg');
+	background-image: url('#{$imagesURL}/ae.jpg');
 }
 
 .skill-item#Figma::before {
-	background-image: url('#{$imagedir}/figma.jpg');
+	background-image: url('#{$imagesURL}/figma.jpg');
 }
 
 .skill-item#Color\ Theory::before {
-	background-image: url('#{$imagedir}/color.jpg');
+	background-image: url('#{$imagesURL}/color.jpg');
 }
 
 .skill-item#Logo\ Design::before {
-	background-image: url('#{$imagedir}/logo.jpg');
+	background-image: url('#{$imagesURL}/logo.jpg');
 }
 
 .skill-item#Psychology::before {
-	background-image: url('#{$imagedir}/psy.jpg');
+	background-image: url('#{$imagesURL}/psy.jpg');
 }
 
 .skill-item#Electronics::before {
-	background-image: url('#{$imagedir}/arduino.jpg');
+	background-image: url('#{$imagesURL}/arduino.jpg');
 }
 
 .skill-item#Illustration::before {
-	background-image: url('#{$imagedir}/illustration.jpg');
+	background-image: url('#{$imagesURL}/illustration.jpg');
 }
 
 .skill-item#React::before {
-	background-image: url('#{$imagedir}/react.png');
+	background-image: url('#{$imagesURL}/react.png');
 }

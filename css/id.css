@@ -1,17 +1,356 @@
-/* Error: Undefined variable.
- *     ,
- * 144 |     background-image: url('#{$imagedir}/profile_photo-120x120.jpg');
- *     |                              ^^^^^^^^^
- *     '
- *   scss\id.scss 144:27  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a     \2577 \a 144 \2502      background-image: url('#{$imagedir}/profile_photo-120x120.jpg');\d\a     \2502                               ^^^^^^^^^\a     \2575 \a   scss\\id.scss 144:27  root stylesheet";
+.my-id {
+  display: flex;
+  justify-content: stretch;
+  flex-direction: row;
 }
+
+#skills-header {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  #skills-header {
+    display: block;
+    text-align: center;
+    width: auto;
+    padding: 1em 0;
+    font-family: overpass;
+    font-weight: 600;
+    font-size: 2rem;
+  }
+  .my-id {
+    flex-direction: column;
+  }
+  .my-id #share {
+    margin-top: -2em;
+  }
+  .contact-wrap {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    bottom: 0;
+    top: 0;
+  }
+  .left-sticky {
+    height: 80vh;
+  }
+}
+.left-sticky {
+  background-color: var(--color-bg-default);
+  width: 100%;
+}
+
+@media (min-width: 767px) {
+  .my-info {
+    position: -webkit-sticky; /* Safari */
+    top: 0em;
+    z-index: 150;
+    position: sticky;
+    bottom: 0;
+  }
+}
+.contact-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 87px;
+  background-color: var(--color-bg-default);
+  box-shadow: 1px 1px 2px var(--button1-box-shadow);
+  border-bottom: 1px solid var(--color-bg-border);
+  z-index: 10;
+  padding: 1em;
+  color: var(--color-control-typo-default);
+}
+.contact-wrap ul {
+  margin-right: auto;
+  position: absolute;
+}
+.contact-wrap li {
+  font-family: "FA5-B";
+  border-radius: 6px;
+  margin: 0.25em;
+}
+.contact-wrap li i {
+  padding: 1em;
+  color: var(--button1-background-color-hover);
+}
+.contact-wrap li:hover {
+  box-shadow: 0 0 6px var(--color2-normal);
+  animation-name: beating;
+  animation-duration: 100ms;
+}
+.contact-wrap li:hover i {
+  color: var(--color2-darker);
+}
+.contact-wrap .label {
+  margin-right: auto;
+}
+
+ul.contact {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.my-info {
+  background: var(--color-bg-default);
+  width: 100%;
+  max-width: 1280px/2;
+}
+
+.about {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: var(--color-bg-ghost);
+  height: calc(100vh - 102px) !important;
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.name h1 {
+  color: hsla(var(--base1), 60%, 55%, 85%) !important;
+  font-weight: 500;
+  font-family: "Ubuntu";
+  text-shadow: 0 0 7px hsla(var(--base1), 40%, 30%, 25%);
+}
+.name span {
+  color: hsla(var(--base1), 50%, 55%, 80%);
+}
+
+.pic {
+  box-sizing: border-box;
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: var(--color-bg-brand);
+  z-index: 1;
+  margin: 1em;
+  background-size: 102.5px;
+  background-position: center;
+  background-image: url("../images/profile_photo-120x120.jpg");
+  border: 2.5px solid hsl(var(--base1), 60%, 35%, 75%);
+  box-shadow: 0 5px 8px hsl(var(--base1), 20%, 50%, 20%);
+}
+
+.status p {
+  color: hsl(var(--base1), 40%, 60%, 80%);
+  font-family: overpass;
+  font-weight: 200;
+  flex-shrink: 0.25;
+  width: auto;
+  margin: 1em 1em;
+  background-color: var(--color-bg-default);
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  padding: 1ch;
+  border-radius: 48px;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .sentence {
+    font-size: 0.9em !important;
+  }
+  .contact-wrap span.label {
+    display: none;
+    visibility: hidden;
+  }
+}
+.buttons-wrapper {
+  padding: 1rem 0 1.5rem 0;
+  width: 66%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  margin: 0.75em;
+  font-family: "roboto";
+  font-size: 1rem;
+  white-space: nowrap;
+  padding: 1rem;
+  transition: var(--animation-duration__2) ease-in-out;
+}
+.btn:hover {
+  cursor: pointer;
+  animation-duration: var(--animation-duration__2);
+  animation-name: button;
+}
+
+.btn1 {
+  color: var(--button1-color);
+  border: var(--button1-border);
+  background-color: var(--button1-background-color);
+}
+.btn1:hover {
+  background-color: var(--button1-background-color-hover);
+  color: var(--button1-color-hover);
+  border: var(--button1-border-hover);
+  box-shadow: var(--button1-box-shadow);
+}
+.btn1 i {
+  margin-left: 1em;
+}
+
+.btn2 {
+  background-color: var(--button2-background-color);
+  color: var(--button2-color);
+  border: var(--button2-border);
+}
+.btn2:hover {
+  background-color: var(--button2-background-color-hover);
+  color: var(--button2-color-hover);
+  border: var(--button2-border-hover);
+}
+.btn2 i {
+  margin-left: 1em;
+}
+
+.btn3 {
+  font-size: 0.85rem;
+  padding: 0.25rem;
+  color: var(--color-typo-link);
+  background-color: var(--button3-background-color);
+  color: var(--button3-color);
+  border: var(--button3-border);
+}
+.btn3:hover {
+  background-color: var(--button3-background-color-hover);
+  color: var(--button3-color-hover);
+}
+.btn3 i {
+  margin-left: 1em;
+}
+
+#magic {
+  transform: translateY(250px);
+}
+
+#skills {
+  max-width: 1280px/2;
+  width: 100%;
+}
+
+#skills-navigation {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 150;
+  background-color: var(--color-bg-default);
+  box-shadow: 1px 1px 2px var(--color-control-bg-secondary);
+  border-bottom: 1px solid var(--color-bg-border);
+}
+
+.skills li {
+  width: 100%;
+}
+
+.ss-box {
+  margin-top: 0em;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+  flex-wrap: wrap;
+  width: auto;
+  width: 100%;
+  top: 0;
+  background-color: var(--color-bg-default);
+  padding: 1em 0;
+}
+.ss-box * {
+  text-decoration: none;
+}
+.ss-box .ss-btn {
+  width: 40%;
+  margin: 0.25em;
+  padding: 0.25em;
+  font-size: minmax(1vw, 1.25rem);
+}
+
+.random-sentence {
+  background-color: var(--color-bg-default);
+  display: flex;
+  justify-content: center;
+  padding: 10%;
+}
+
+.message-me-wrapper,
+.share-me-wrapper {
+  display: block;
+  position: absolute;
+  z-index: 10;
+  transform: scaleY(0);
+  opacity: 0;
+}
+.message-me-wrapper .ss-box,
+.share-me-wrapper .ss-box {
+  opacity: 1;
+  visibility: visible;
+  height: auto;
+  transform: scaleY(1);
+  transition: all var(--animation-duration__5);
+}
+.message-me-wrapper.active,
+.share-me-wrapper.active {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: var(--color-bg-default);
+  transform: scaleY(1);
+  transform-origin: bottom;
+  animation-duration: var(--animation-duration__4);
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  transition: all var(--animation-duration__4);
+}
+.message-me-wrapper .close-this,
+.share-me-wrapper .close-this {
+  color: var(--color-typo-link);
+  float: right;
+  clear: both;
+  margin-right: 5vw;
+  transform: scale(1.5);
+}
+.message-me-wrapper .close-this:hover,
+.share-me-wrapper .close-this:hover {
+  color: var(--color-control-bg-typo-primary-hover);
+  animation-name: beating;
+  animation-duration: var(--animation-duration__2);
+}
+.message-me-wrapper .content,
+.share-me-wrapper .content {
+  margin: 5vh;
+  height: auto;
+}
+
+textarea.wpcf7-form-control.wpcf7-textarea {
+  height: 100px;
+}
+
+input[type=date],
+input[type=email],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type=text],
+input[type=url],
+select,
+textarea {
+  background-color: var(--color-bg-secondary);
+  color: var(--color1-light);
+}
+
+/*# sourceMappingURL=id.css.map */

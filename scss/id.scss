@@ -1,3 +1,6 @@
+$imagesURL: '../images';
+
+
 //make the left side stick to the top with this container
 
 .my-id {
@@ -141,7 +144,7 @@ ul.contact {
 	margin: 1em;
 	background-size: 102.5px;
 	background-position: center;
-	background-image: url('#{$imagedir}/profile_photo-120x120.jpg');
+	background-image: url('#{$imagesURL}/profile_photo-120x120.jpg');
 	border: 2.5px solid hsl(var(--base1), 60%, 35%, 75%);
 
 	box-shadow: 0 5px 8px hsl(var(--base1), 20%, 50%, 20%);

@@ -4,7 +4,6 @@
 // @use 'light_colors';
 @use 'skills';
 
-$imagedir: '../images';
 
 @import url('https://fonts.googleapis.com/css');
 
@@ -16,12 +15,12 @@ $imagedir: '../images';
 
 @font-face {
 	font-family: 'FA5';
-	src: url(../../node_modules/fontawesome/webfonts/fa-solid-900.woff2);
+	src: url('../webfonts/fa-solid-900.woff2');
 }
 
 @font-face {
 	font-family: 'FA5-B';
-	src: url(../../node_modules/fontawesome/webfonts/fa-brands-400.woff2);
+	src: url('../webfonts/fa-brands-400.woff2');
 }
 
 * {
